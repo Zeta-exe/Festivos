@@ -8,13 +8,12 @@
     width: 100%;
     height: 400px;
     position: relative;
-    background-image: url(imgs/calendario.jpg);
+    background-image: url(./imgs/calendario.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: none;
 
 }
-
 
 .Portada:before{
     content: '';
@@ -25,6 +24,30 @@
     top: 0;
     left: 0;
 }
+
+.Portada-basket{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-image: url(./imgs/Baloncesto-grande.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+
+}
+
+.Portada-basket:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 88, 248, 0.192);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
 
 .portada-info{
     max-width: 700px;
@@ -95,4 +118,10 @@ footer{
 
 img{
     width: 80%;
+}
+
+.foto{
+    height: auto;
+    width: auto;
+    max-width: 900px;
 }
