@@ -3,6 +3,117 @@
 }
 
 
+/*Header*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 25px -22px black; 
+    z-index: 2;
+}
+
+.contenedor-header{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1{
+    color:#000000;  
+}
+
+.logo h1 b{
+    color: var(--color-dominante);
+}
+
+
+.menu{
+    height: 70px;
+}
+
+.menu nav{
+    height: 100%;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+
+}
+
+.menu nav ul li{
+    height: 70%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.menu-selected:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-dominante);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu nav ul li a{
+    color: #777777;
+    transition: color 300ms;
+    font-size: 18px;
+}
+.menu nav ul li a:hover{
+    color: var(--color-dominante);
+}
+
+.menu .text-menu-selected{
+    color: var(--color-dominante);
+    
+}
+
+.menu nav ul li a i{
+    display: none;
+}
+
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #e9e9e9fa;
+    border-radius: 100%;
+    color: #787878;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#icon-menu:hover{
+    opacity: 0.7;
+}
+
+/*PORTADA*/
 
 .Portada{
     width: 100%;
@@ -124,4 +235,8 @@ img{
     height: auto;
     width: auto;
     max-width: 900px;
+}
+
+a{
+    text-decoration: none;
 }
